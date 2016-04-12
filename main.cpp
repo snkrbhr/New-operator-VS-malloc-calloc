@@ -8,7 +8,7 @@ main()
     cout<<"Using MALLOC Function : \n";
  /******************* MALLOC Function *************************/
     //creating an array dynamically of size 5 using malloc;
-    int *mPtr = (int*) malloc(sizeof(int) * 5);
+    int *mPtr = (int*) malloc(sizeof(int) * 5);  // malloc needed Explicit type casting;
     for(int i=0;i<5;i++)
        {
          *(mPtr+i)=i+1;     //input
@@ -20,7 +20,7 @@ main()
  /******************* NEW Operator *************************/
 
 
- int *nPtr= new int [5];
+ int *nPtr= new int [5];           // new operator don't read any type casting; it have implicit type casting;
  for(int i=0;i<5;i++)
       {
         *(nPtr+i)=i+1;     //input
